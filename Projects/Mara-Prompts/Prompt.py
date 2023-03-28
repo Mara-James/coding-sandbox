@@ -9,15 +9,14 @@ class Prompt:
 
     def order(self,*words):
 
-        order_dict={}
-        
         for entry in words:
-            key= entry
-            order_dict[key]=" "
-        print(order_dict)
+            entry= input(f"Please enter a(n) {entry}:\n")
+            print(entry)
+            
+            
 
 
 
 first_try=Prompt("Prompt 1","Some days when the weather was 1 , Kendle enjoyed 2 through the local 3.")
 
-print(first_try.order('adj', 'verb', 'noun','adj2'))
+first_try.order('adj', 'verb', 'noun','adj2')
