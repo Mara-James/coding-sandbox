@@ -1,0 +1,35 @@
+______________________________________Mad_Prompts_Project__________________________________________________________
+
+Goals:
+    - to have a library of Mad libs that are randomly generated based on which genre you choose
+    - to allow users to choose between 5 different genres
+    - to allow users to choose to have pregenerated words or to use their own
+    - to make lists of words (n,adj,v,adv) for users to chose from when making prompts ( ideally in large enough 
+      quantity that the lists can be randomized between each run of the program)
+    - use less if-else statements and more object oriented programming
+
+Stretch Goals:
+    - to create a python library that allows the program to call a random set of words with Noun, Adj, Verb and Adv 
+      monikers attactched to them, stripped of all definitions, and logged into a tuple. 
+    - each word may then be called, when spelled correctly to search the definition of the word.
+    - to have a working program that can be deployed into a web application, single page website
+    
+_____________________________________________________________________________________________________________________________
+
+ Todo List:
+    [] Manually Generate 5 madlib blank prompts for each of the 5 generes 
+    [] Create Functionality to call Multipule Choice pre-generated word "Tables" for user if Multiple Choice
+       status is active, consider making multiple choice option togglabel throughout program usage.
+    [] Create Selectable Word options for Multiple Choice word tables
+    [] Develop feature to randomly generate prompts based on genere selection and M.C status toggle
+    
+Stetch Todo List:
+    [] Locate a publicly available english dictionary to convert to data
+    [] Create Funtion to convert English Dictionary to usable data (ie useable words only)
+    [] Create Function to Sort E.D. data into tuples (they run faster than lists) separated by 
+       Noun, Adjective, Verb, Adverb
+    [] Create Function to call a random selection of 6 words from E.D word tuples
+    [] Create Functionality to call words attached to definitions based on user word input
+    [] Web Application Goals and To-dos to be evaluated upon completion of initial goal completion
+
+

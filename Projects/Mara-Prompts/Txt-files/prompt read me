@@ -1,0 +1,38 @@
+
+
+
+
+prompts need to:
+
+-ask for a nickname for the prompt
+
+- ask for the prompt string, using incrementing numbers for each fillable space
+
+- ask for the type of word needed to fill each lettered space in order which the prompt takes ex: (1,2,3,4,5) == (noun,verb,adj,adv,verb)
+
+- call the correct number of word calls in the correct order, based on what was 
+initially set in the prompt.
+
+- ask for the number of words and then ask for the order so that it can determine the
+number of arguments the order will take.
+
+
+
+
+when called prompts need to:
+
+- randomize from the prompts built within a certain class
+
+- ask for words in the correct order which it will place them into the prompt
+
+- provide the user the option to generate a random list of 6  words of the correct 
+type to choose from. the user can then choose to type in a new word or one of the ones 
+that was randomly generated.
+
+- display the filled out randomized prompt to the user
+
+
+
+----stretch goals------
+
+allow for multiple choice functionality where users only need to select the numeric of the randomly generated words in order for python to store that specific word for that version of the prompt. upon reload the value stored is = 0
