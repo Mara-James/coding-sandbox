@@ -4,7 +4,8 @@ CHOOSE YOUR OWN ADVENTURE MINI PROJECT
 GOALS
 
 - to get comfortable with using if,elif,else statements.
-- to experiement with more memory efficient versions of if statements ie. switch statements and different styles of ternaries within python
+- to experiement with more memory efficient versions of if statements ie. switch statements and 
+different styles of ternaries within python
 -to create a scaleable story that can easily be added too
 
 
@@ -16,25 +17,57 @@ STRETCH GOALS:
 
 Story line branches
 
-MAIN = user traverses the sea in search of treasure island without perrishing and without the help of a crew. makes it to treasure island, avoids the locals and somehow deciphers the map. they follow the map through the jungle without harm. they journey into the cave system narrowly escaping the entrance collapsing, they find the treasure and make it through the cavern maze to find a hidden cove where they find a small boat that will take them back to their ship where they can load the treasure and sail the high seas with their vast forturne
+MAIN = user traverses the sea in search of treasure island without perrishing and without
+ the help of a crew. makes it to treasure island, avoids the locals and somehow deciphers 
+ the map. they follow the map through the jungle without harm. they journey into the cave 
+ system narrowly escaping the entrance collapsing, they find the treasure and make it 
+ through the cavern maze to find a hidden cove where they find a small boat that will take 
+ them back to their ship where they can load the treasure and sail the high seas with their 
+ vast forturne
 
-A CREW = user traverses the sea in search of treasure island without perrishing and with the help of a crew. makes it to treasure island, avoids the locals and the crew's cartographer deciphers the map. they follow the map through the jungle without harm. they journey into the cave system narrowly escaping the entrance collapsing, they find the treasure and make it through the cavern maze to find a hidden cove where they find a small boat that will take them back to their ship where they can load the treasure and sail back to the coastal town where they took on the crew to split the treause and part ways
+A CREW = user traverses the sea in search of treasure island without perrishing and with the 
+help of a crew. makes it to treasure island, avoids the locals and the crew's cartographer 
+deciphers the map. they follow the map through the jungle without harm. they journey into the 
+cave system narrowly escaping the entrance collapsing, they find the treasure and make it 
+through the cavern maze to find a hidden cove where they find a small boat that will take them 
+back to their ship where they can load the treasure and sail back to the coastal town where 
+they took on the crew to split the treause and part ways.
 
-A VILLAGE = user traverses the sea in search of treasure island without perrishing and without the help of a crew. makes it to treasure island, befriends the locals and the local guide deciphers the map. they follow the map through the jungle without harm. they journey into the cave system narrowly escaping the entrance collapsing, they find the treasure and make it through the cavern maze to find a hidden cove where they find a small boat that will take them back to their ship where they can load their share of the treasure and sail the high seas with their vast forturne, leaving the friendly locals behind. Or they can choose to settle down in the town and stay with the friends they made there.
+A VILLAGE = user traverses the sea in search of treasure island without perrishing and without 
+the help of a crew. makes it to treasure island, befriends the locals and the local guide 
+deciphers the map. they follow the map through the jungle without harm. they journey into the 
+cave system narrowly escaping the entrance collapsing, they find the treasure and make it 
+through the cavern maze to find a hidden cove where they find a small boat that will take them 
+back to their ship where they can load their share of the treasure and sail the high seas with 
+their vast forturne, leaving the friendly locals behind. Or they can choose to settle down in 
+the town and stay with the friends they made there.
 
-A CREW & A VILLAGE  = user traverses the sea in search of treasure island without perrishing and with the help of a crew. makes it to treasure island, befriends the locals and the local guide with the help of the crew's cartographer deciphers the map. they follow the map through the jungle without harm. they journey into the cave system narrowly escaping the entrance collapsing, they find the treasure and make it through the cavern maze to find a hidden cove where they find a small boat that will take them back to their ship where they can load their share of the treasure and sail the high seas with their vast forturne and their new crew, leaving the friendly locals behind. Or they can choose to settle down in the town and stay with the friends they made there.
+A CREW & A VILLAGE  = user traverses the sea in search of treasure island without perrishing and 
+with the help of a crew. makes it to treasure island, befriends the locals and the local guide 
+with the help of the crew's cartographer deciphers the map. they follow the map through the jungle 
+without harm. they journey into the cave system narrowly escaping the entrance collapsing, they 
+find the treasure and make it through the cavern maze to find a hidden cove where they find a 
+small boat that will take them back to their ship where they can load their share of the treasure 
+and sail the high seas with their vast forturne and their new crew, leaving the friendly locals 
+behind. Or they can choose to settle down in the town and stay with the friends they made there.
 
 CRITICAL FAILURE = at any point the user can make a desicion that will end in death and the end of the story
 
 build out:
 
 this game will consist of several different moving parts:
-    - each scene will have its own "room", where the player will interact with the scene. a scene will be informed by a players previous choices. 
+    - each scene will have its own "room", where the player will interact with the scene. a scene will be 
+    informed by a players previous choices. 
 
-    - new scenes will be called based on the parameters of their previous choices(for example a player will have a different scene option if they choose to sail alone vs if they sail with a group of people.)
+    - new scenes will be called based on the parameters of their previous choices(for example a player will 
+    have a different scene option if they choose to sail alone vs if they sail with a group of people.)
 
-    ex "this is the description that sets the scene, it is written vaguely enough that it can apply to any of the decisions youve made in the past... now it askes you to make a decision."
+    ex "this is the description that sets the scene, it is written vaguely enough that it can apply to any 
+    of the decisions youve made in the past... now it askes you to make a decision."
             1. this is the wrong decision
-            2. this is the correct decision and flavor text informs you that this might be the correct decision based on the previous decisions youve made.
-    " when you make your decision you will be prompted with a description of the outcome of your decision, this will be heavily flavored to immerse you into the story you have decided upon." 
+            2. this is the correct decision and flavor text informs you that this might be the correct decision 
+            based on the previous decisions youve made.
+
+    " when you make your decision you will be prompted with a description of the outcome of your decision, this 
+    will be heavily flavored to immerse you into the story you have decided upon." 
 
