@@ -82,6 +82,46 @@ the scene names are as follows:
 
 
 
+%%%%%%%%  Break Down  %%%%%%%%%%%%%%
+
+MAIN    func - Scene - called based on Choice (bool value) of previous scene (affected by item pick up and npc choice)    
+                       IMPORTS FROM --- Character
+                                        NPC option
+                                        Item Pickup
+
+                       IMPORTS TO ---   Path
+                                        Inventory View
+                                        Achievements
+                                        Wounds
+        
+        func - path - stores the value of scene Choice and determines, imports from scene
+        func - end - called based on value of path, imports from path
+
+
+                                   
+        cls - character - __init__ == character sheet inputs, imports to scene and ending 
+            subcls - Health Tracker - affected by choices, ability to terminate game at 0, imports from wounds
+        
+        cls - Inventory View- affected by certain character decsisions, allows for more character decisions if True, 
+                              imports from scenes, scenes effect Bool value of inventory
+        
+        cls - Achievements - affected by true and false statements reveals once end is reached, imports from scenes, 
+                              scenes effect Bool value of achievement(s)
+        
+        cls - NPC choice- affects Bool of NPC Choice availablitiy - imports to NPC option
+        
+        cls - Wounds -affected by scene choice, imports from scene
+                      affects heath bar, imports to health tracker
+
+        func - NPC option - calls correct NPC choice value based on --- imports to scene, imports from NPC choice
+        func - Item Pickup - affects scene choice options --- imports to scene based on scene called
+
+
+        
+
+
+
+
 
 
 
