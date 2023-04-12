@@ -114,7 +114,7 @@ MAIN    func - Scene - called based on Choice (bool value) of previous scene (af
                       affects heath bar, imports to health tracker
 
         func - NPC option - calls correct NPC choice value based on --- imports to scene, imports from NPC choice
-        func - Item Pickup - affects scene choice options --- imports to scene based on scene called
+        func - Item Pickup [within a dict with bool values and item keys]- affects scene choice options --- imports to scene based on scene called
 
 
         
