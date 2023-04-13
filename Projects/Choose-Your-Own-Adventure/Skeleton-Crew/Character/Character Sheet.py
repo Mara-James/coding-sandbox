@@ -6,11 +6,17 @@ player_name= input("what is name?")
 
 class Character():
 
-    attribute="example"   #class attribute
-
-    def __init__(self,name):  #instance method
-        self.name= name       #instance attribute 
 
 
-    def func(self, blah):   #instance method, anything that calls self is instance method
-        pass
+    def __init__(self,first_name,last_name,eyes,hair,age,gender,pronouns,occupation,trinket):
+        
+        self.first_name = first_name
+        self.last_name = last_name
+        self.eyes = eyes
+        self.hair = hair
+        self.age = age
+        self.gender = gender
+        self.pronouns = pronouns
+        self.occupation = occupation
+        self.trinket = trinket
+        
