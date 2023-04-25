@@ -2,7 +2,7 @@
 # game is stored. it will allow for personalized text formatting and will need to be imported into every 
 # scene that references the character
 
-player_name= input("what is name?")
+
 
 class Character():
 
