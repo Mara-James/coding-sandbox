@@ -53,28 +53,3 @@ class Character():
             case _ :
                 self._pronouns= pronouns
         
-
-
-
-    #figure out how to split pronouns up so that you can invoke pronoun cases on a case by case basis (ie. subject, object, possessive, reflexive)
-     
-    # if pronouns== 1:
-    #     subject_pn= "she"
-    #     object_pn= 'her'
-    #     possessive_pn= 'hers'
-    #     reflexive_pn= 'herself'
-
-    # elif pronouns== 2:
-    #     subject_pn= "he"
-    #     object_pn= 'him'
-    #     possessive_pn= 'his'
-    #     reflexive_pn= 'himself'
-
-    # elif pronouns== 3:
-    #     subject_pn= "they"
-    #     object_pn= 'them'
-    #     possessive_pn= 'theirs'
-    #     reflexive_pn= 'themself'
-
-    # else:
-    #     raise ValueError

@@ -1,0 +1,26 @@
+
+to call user attributes:
+
+user.first_name
+user.last_name
+user.eyes
+user.hair
+user.age
+user.gender
+user.occupation
+user.trinket
+
+for pronouns:
+
+user.pronouns.get("subject")
+user.pronouns.get("object")
+user.pronouns.get("possessive")
+user.pronouns.get.("reflexive")
+
+or for pronouns: (consider changing words to single letters to not take up too 
+not take up to much real estate in written blocks)
+
+subjective
+objective
+possessive
+reflexive

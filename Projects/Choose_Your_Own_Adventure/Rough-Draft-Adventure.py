@@ -43,10 +43,10 @@ print(f'''
                             Welcome to Taer'stova
 
         You stand on the border between the dense cobblestone streets of Taer’stova 
-        and the sun-beaten, salt stained Port Morn'. 6 months ago when your estranged 
-        father passed on, you were left to arrange his funeral and get his belongings 
-        in order. Among the strange sea faring memorabilia that lined his estate’s 
-        mahogany shelves. You found a letter, addressed to you… 
+        and the sun-beaten, salt stained docks of ort Morn'. 6 months ago when your 
+        estranged father passed on, you were left to arrange his funeral and get his
+        belongings in order. Among the strange sea faring memorabilia that lined his 
+        estate’s mahogany shelves. You found a letter, addressed to you… 
 
         
                 “My dear sweet {first_name}, I know that I may not have

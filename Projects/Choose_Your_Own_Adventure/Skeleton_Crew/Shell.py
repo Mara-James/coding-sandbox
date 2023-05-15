@@ -6,7 +6,7 @@ from Character.Health_Tracker import *
 from NPCs import*
 from Inventory.Pickup import *
 # from Global_Variables import *
-from Scenes.Character_Creation import Character_Creation_Scene
+from Scenes.Scene_0.Character_Creation import Character_Creation_Scene
 import time
 
 
@@ -66,12 +66,14 @@ else:
 ''')
     
 user=Character_Creation_Scene()
+subjective= user.pronouns.get("subject")
+objective=user.pronouns.get("object")
+possessive=user.pronouns.get("possessive")
+reflexive=user.pronouns.get("reflexive")
 
-print(user.first_name)
-print(user.pronouns.get("subject"))
+print(objective)
 
 
-# import scene 0 for character creation
 
 #import scene 1 and  character decisions, along with assigning a fresh inventory to player and commiting the 
 # fresh inventory to the character
