@@ -1,0 +1,24 @@
+
+
+[x] install pipenv into choose your own adventure, 
+you will need to make a pip file and a pip.lock 
+file, you will need to google to jog memmory
+
+[x] also you will need to install ipdb
+
+[] build out shell functionality using while loops 
+to bring up menus to player
+
+___
+
+[x] 0. visually set up character creation cli within character creation scene (! NOT CHARACTER SHEET)
+
+[] 1. set up inventory to update and be retrievable
+
+[] 2. set up scene and decision response cycle
+
+[] 3. set up wound gate
+
+
+
+
