@@ -8,8 +8,7 @@ from Inventory.Pickup import *
 # from Global_Variables import *
 from Scenes.Scene_0.Character_Creation import Character_Creation_Scene
 import time
-
-
+from Inventory.View import inventory_view
 
 os.system('cls' if os.name == 'nt' else 'clear')
 main_menu=input(r'''
@@ -66,12 +65,20 @@ else:
 ''')
     
 user=Character_Creation_Scene()
+scene="3"
 subjective= user.pronouns.get("subject")
 objective=user.pronouns.get("object")
 possessive=user.pronouns.get("possessive")
 reflexive=user.pronouns.get("reflexive")
 
 print(objective)
+
+# print (user.inventory)
+user.inventory["journal"]=journal
+
+inventory_view(user,scene)
+
+
 
 
 

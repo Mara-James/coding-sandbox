@@ -3,7 +3,7 @@
 from Character.Character_Sheet import Character
 import os
 import time
-
+from Inventory.Pickup import item
 
 def Character_Creation_Scene ():
 
@@ -360,7 +360,8 @@ def Character_Creation_Scene ():
 ''')
 
     os.system('cls' if os.name == 'nt' else 'clear')
-    my_trinket= input(r'''
+    inventory= {}
+    trinket=item(input(r'''
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                                                                           %%%
@@ -380,10 +381,11 @@ def Character_Creation_Scene ():
 %%%                                                                           %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-''')
+'''),"A small trinket to remind you of home.")
+    inventory["trinket"]=trinket
+
         
 
-    return Character(first_name,last_name,eyes,hair,age,gender,pronouns,occupation,my_trinket)
+    return Character(first_name,last_name,eyes,hair,age,gender,pronouns,occupation,inventory)
 
-
-    
+    # turn inventory into a dictionary instead of a list in order to call the items by name

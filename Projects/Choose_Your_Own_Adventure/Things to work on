@@ -15,6 +15,8 @@ ___
 
 [] 1. set up inventory to update and be retrievable
 
+[] 1.a. set up a scene counter to tick up ecery time a new scene cycel starts, then tie that counter to item class item response func
+
 [] 2. set up scene and decision response cycle
 
 [] 3. set up wound gate
