@@ -8,28 +8,60 @@
 
 import os 
 import time
-
+from ipdb import*
 
 def inventory_view(user,scene):
     os.system('cls' if os.name == 'nt' else 'clear')
     item_id={}
 
     while True:
-        print('''To interact with inventory, please type the number associated with the item''')
+        os.system('cls' if os.name == 'nt' else 'clear')   
+        print('''
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@                                                                           @@@
+@@@                            ___INVENTORY___                                @@@
+@@@                                                                           @@@
+@@@      To interact, please type the number associated with the item         @@@
+@@@                                                                           @@@''')
 
         for count,item in enumerate(user.inventory):
             
-            print("[["+str(count)+"]]",user.inventory[item].name)
-            item_id[count]=user.inventory[item]
+            print(f'''
+                  [[{str(count)}]] {user.inventory[item].name}                  ''')
+            item_id[str(count)]=user.inventory[item]
 
-        user_input=int(input(""))
+        print('''
+@@@                                                                           @@@        
+@@@                                                                           @@@
+@@@                            Type [[x]] to exit                             @@@
+@@@                                                                           @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@''')
 
+        user_input=input("")
+
+        if user_input in item_id.keys():
+                os.system('cls' if os.name == 'nt' else 'clear')      
+                print(f'''
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@                                                                           @@@
+@@@                                                                           @@@
+@@@                                                                           @@@
+                {item_id[user_input].name}                           
+                                                                           
+                {item_id[user_input].description}  
+
+                {item_id[user_input].response[scene]}                        
+                ''')
+
+                print(r'''
+@@@                                                                           @@@
+@@@                            Type [[x]] to exit                             @@@
+@@@                                                                           @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@''')
+                user_input= input("")
         
-        while user_input in item_id.keys():
-            print(item_id[user_input].name)
-            print(item_id[user_input].description)
-            print(item_id[user_input].response[scene])
-
-            time.sleep(2)
+        elif user_input=="x" :
             break
 
+        else:
+            raise ValueError

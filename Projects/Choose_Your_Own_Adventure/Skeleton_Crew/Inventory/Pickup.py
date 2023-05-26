@@ -78,8 +78,7 @@ journal.response["13"]="scene 13 response"
 
 
 '''MAPS'''
-maps=item("Weathered Maps",'''They are sun bleached and surf stained from their many years at sea
-                               but you can still make out what they say...mostly.''')
+maps=item("Weathered Maps","They are sun bleached and surf stained from their many years at sea but you can still make out what they say...mostly.")
 # scene responses
 maps.response["0"]="scene 0 response"
 maps.response["1"]="scene 1 response"
@@ -170,7 +169,7 @@ telescope.response["12"]="scene 12 response"
 telescope.response["13"]="scene 13 response"
 
 '''MACHETTE'''
-machette=item("Machette","A weighted machette, youre sure there are many uses for this")
+machette=item("Machette","A weighted machette, you're sure there are many uses for this kind of weapon")
 # scene responses
 machette.response["0"]="scene 0 response"
 machette.response["1"]="scene 1 response"
@@ -188,7 +187,7 @@ machette.response["12"]="scene 12 response"
 machette.response["13"]="scene 13 response"
 
 '''RARE GEMS(possibly a small doll or something of the village's that is valuable)'''
-rare_gems=item("Rare Gems","A bag of perfectly round gems that glisten and sparkle like the sea, youre sure they must be valuable")
+rare_gems=item("Rare Gems","A bag of perfectly round gems that glisten and sparkle like the sea, you're sure they must be valuable")
 # scene responses
 rare_gems.response["0"]="scene 0 response"
 rare_gems.response["1"]="scene 1 response"
@@ -225,8 +224,8 @@ tools.response["12"]="scene 12 response"
 tools.response["13"]="scene 13 response"
 
 '''FISHING NET'''
-fishing_net=item("Fishing Net","A tightly woven, and stirdy looking fishing net... is this made out of metal?! What kind of fish are they trying to catch?!")
-# scene responses
+fishing_net=item("Fishing Net","A tightly woven, and stirdy looking fishing net... Is this made out of metal?! What kind of fish are they trying to catch?")
+# scene response
 fishing_net.response["0"]="scene 0 response"
 fishing_net.response["1"]="scene 1 response"
 fishing_net.response["2"]="scene 2 response"

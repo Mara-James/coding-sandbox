@@ -9,6 +9,7 @@ from Inventory.Pickup import *
 from Scenes.Scene_0.Character_Creation import Character_Creation_Scene
 import time
 from Inventory.View import inventory_view
+from ipdb import *
 
 os.system('cls' if os.name == 'nt' else 'clear')
 main_menu=input(r'''
@@ -75,6 +76,10 @@ print(objective)
 
 # print (user.inventory)
 user.inventory["journal"]=journal
+user.inventory["maps"]=maps
+user.inventory["black_book"]= black_book
+user.inventory["coins"]=coins
+user.inventory["compass"]=compass
 
 inventory_view(user,scene)
 
