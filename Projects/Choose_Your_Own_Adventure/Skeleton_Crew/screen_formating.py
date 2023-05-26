@@ -23,7 +23,7 @@
         [] fortatting(remaining_str, line_len, margin_len)           
 '''
 
-text="Lorem ipsum dolor sit amet, consectetur adipi scing elit. Vivamus ultricies sem id lacus vestibulum viverra"
+# text="Lorem ipsum dolor sit amet, consectetur adipi scing elit. Vivamus ultricies sem id lacus vestibulum viverra"
 # this function formats all information fed through it to fit nicely within the cli screen size 
 
 
@@ -53,69 +53,4 @@ def formatting(item, line_len, margin_len):
 
 
 
-formatting(text,45,15)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#     raw_item_list= item.split()
-#     # item=item
-#     line_count=0
-#     formatted_list= []
-#     new_str=""
-#     line_number={}
-#     # for word in raw_item_list:
-#     #     line_count += len(word)
-#     #     if line_count <=45:
-#     #         raw_item_list
-#     #     elif line_count >=45:
-
-#     # print( line_count)
-
-#     for word in raw_item_list:
-#         if (len(word+" ")+ line_count) <= 45:
-#             formatted_list.append(word+" ") 
-#             line_count += len(word+ " ")
-#         # elif line_count >= 45:
-            
-        
-#     for i in formatted_list:
-#         new_str += (i+" ")
-
-#     print( line_count)
-#     print(formatted_list)
-#     print(new_str)
-#     print( raw_item_list )
-# formatting(text)
 

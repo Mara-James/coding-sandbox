@@ -9,6 +9,7 @@
 import os 
 import time
 from ipdb import*
+from screen_formating import formatting
 
 def inventory_view(user,scene):
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -46,12 +47,13 @@ def inventory_view(user,scene):
 @@@                                                                           @@@
 @@@                                                                           @@@
 @@@                                                                           @@@
-                {item_id[user_input].name}                           
+               {item_id[user_input].name}  
+                ''' )                        
                                                                            
-                {item_id[user_input].description}  
-
-                {item_id[user_input].response[scene]}                        
-                ''')
+                formatting(item_id[user_input].description,45,15) 
+                print(" ")
+                formatting(item_id[user_input].response[scene],45,15)                        
+                
 
                 print(r'''
 @@@                                                                           @@@
