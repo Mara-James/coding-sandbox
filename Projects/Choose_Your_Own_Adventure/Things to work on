@@ -13,9 +13,9 @@ ___
 
 [x] 0. visually set up character creation cli within character creation scene (! NOT CHARACTER SHEET)
 
-[] 1. set up inventory to update and be retrievable
+[x] 1. set up inventory to update and be retrievable
 
-[] 1.a. set up a scene counter to tick up ecery time a new scene cycel starts, then tie that counter to item class item response func
+[] 1.a. set up a scene counter to tick up every time a new scene cycle starts, then tie that counter to item class item response func
 
 [] 2. set up scene and decision response cycle
 

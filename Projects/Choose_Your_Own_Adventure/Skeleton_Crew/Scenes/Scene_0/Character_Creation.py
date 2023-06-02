@@ -5,6 +5,7 @@ import os
 import time
 from Inventory.Pickup import item
 
+scene= "0"
 def Character_Creation_Scene ():
 
     print(f"Character Creation Scene-0 ")

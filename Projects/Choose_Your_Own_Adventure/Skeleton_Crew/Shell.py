@@ -66,7 +66,7 @@ else:
 ''')
     
 user=Character_Creation_Scene()
-scene="3"
+scene="0"
 subjective= user.pronouns.get("subject")
 objective=user.pronouns.get("object")
 possessive=user.pronouns.get("possessive")
