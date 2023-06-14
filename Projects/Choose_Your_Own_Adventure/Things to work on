@@ -33,3 +33,32 @@ ___
 
 stretch goal
 [] add a list of occupations to choose from that give you advantages and different story beats
+
+
+
+
+
+## make a setter and getter prop to set interaction options for user
+# 
+# #### optional respopnse trees dependent on values in inventory and team. These result in 0 hp change and if they do
+    #### do not have responses and instead just remove responses, they will only remove one response each. they also build
+    #### on each other so they will each remove perish unless used with the other option(team or invenotry respectfully)
+    #### in which case they will combine and remove both wound 3 and perish options
+
+
+### consider making these functions part of a different class or function tree
+    #inventory options
+    # def item_use(self,current_user_inventory):
+    #     current_user_inventory
+    #     print("item use")    
+    # def item_hint(self,current_user_inventory):
+    #     current_user_inventory
+    #     print("item hint")
+    # #team options
+    # def team_aid(self, team):
+    #     team
+    #     print("aid") 
+    # def team_hint(self, team):
+    #     team
+    #     print("team hint")
+      team= "none"

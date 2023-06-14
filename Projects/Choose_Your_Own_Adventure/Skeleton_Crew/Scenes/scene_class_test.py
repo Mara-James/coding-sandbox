@@ -8,78 +8,65 @@ and scalable than individual functions
 
 class Scene():
 
-    team= "none"
-    hp=4
-
-    def __init__(self,user,item_pick_up,scene_name,scene_num=int,wound=0):
-        self.user= user
-        self.item_pick_up= item_pick_up
+    def __init__(self,scene_name,scene_num=int):
         self.name=scene_name
         self.scene_num=scene_num
-        self.wound= wound
+    
+    def scene_body(self, text= "empty field"):
+        print(text)
+
 
     
-    def scene_body(self):
-        pass
-
-#### possible scene responses 
-    @classmethod
-    def safe(cls,hp_change=0,text="safe"):
-        cls.hp -= hp_change
-        print(text,cls.hp)
-
-    @classmethod
-    def wound_1(cls,hp_change=1,text="wound-1"):
-        cls.hp -= hp_change
-        print(text,cls.hp)
-
-    @classmethod
-    def wound_2(cls,hp_change=2, text="wound-2"):
-        cls.hp -= hp_change
-        print(text,cls.hp)
-
-    @classmethod
-    def wound_3(cls,hp_change=3, text="wound-3"):
-        cls.hp -= hp_change
-        print(text,cls.hp)
-        
-    @classmethod
-    def perish(cls,hp_change=4, text="perish"):
-        cls.hp -= hp_change
-        print(text,cls.hp)
-
-    #### optional respopnse trees dependent on values in inventory and team. These result in 0 hp change and if they do
-    #### do not have responses and instead just remove responses, they will only remove one response each. they also build
-    #### on each other so they will each remove perish unless used with the other option(team or invenotry respectfully)
-    #### in which case they will combine and remove both wound 3 and perish options
-
-    #inventory options
-    def item_use(self,current_user_inventory):
-        current_user_inventory
-        print("item use")    
-    def item_hint(self,current_user_inventory):
-        current_user_inventory
-        print("item hint")
-    #team options
-    def team_aid(self, team):
-        team
-        print("aid") 
-    def team_hint(self, team):
-        team
-        print("team hint")
-
-    # safe(),wound_1(),wound_2(),wound_3(),perish() 
-
-print(f"scene 1 hp = {Scene.hp}")
-test=Scene("user","inventory","test scene",00,0)
-test.wound_1()
-test.wound_2()
-
-print(f"scene 2 hp = {Scene.hp}")
-test2=Scene("user","inventory","test scene",00,0)
-test2.wound_1()
-test2.wound_3()
-test2.perish()
 
 
-## make a setter and getter prop to set interaction options for user
+'''Scene Data Base'''
+
+# Scene 1 wait or sail
+scene_1= Scene("Wait or Sail", 1)
+scene_1.scene_body(" this is flavor text for scene 1: Wait or Sail")
+
+# Scene 2 crew or solo
+scene_2 = Scene("Crew or Solo",2)
+scene_2.scene_body(" this is flavor text for scene 2: Crew or Solo")
+
+
+# Scene 3 Pirate attack
+scene_3= Scene("Pirate attack", 3)
+scene_3.scene_body(" this is flavor text for scene 3: Pirate attack")
+
+# Scene 4 eye of the storm
+scene_4= Scene("eye of the storm", 4)
+scene_4.scene_body(" this is flavor text for scene 4: eye of the storm")
+
+
+# Scene 5 A Decision
+scene_5= Scene("A Decision", 5)
+scene_5.scene_body(" this is flavor text for scene 5: A Decision")
+
+# Scene 6 A Bone to Pick
+scene_6= Scene("A Bone to Pick", 6)
+scene_6.scene_body(" this is flavor text for scene 6: A Bone to Pick") 
+
+# Scene 7 A Cryptic Map
+scene_7= Scene("A Cryptic Map", 7)
+scene_7.scene_body(" this is flavor text for scene 7: A Cryptic Map")
+
+# Scene 8 The Trees Have Eyes
+scene_8= Scene("The Trees Have Eyes", 8)
+scene_8.scene_body(" this is flavor text for scene 8: The Trees Have Eyes")
+
+# Scene 9 Hels Cave
+scene_9= Scene("Hels Cave", 9)
+scene_9.scene_body(" this is flavor text for scene 9: Hels Cave")
+
+# Scene 10 Stalagmite Labyrinth
+scene_10= Scene("Stalagmite Labyrinth", 10)
+scene_10.scene_body(" this is flavor text for scene 10: Stalagmite Labyrinth")
+
+# Scene 11 Warm Welcome
+scene_11= Scene("Warm Welcome", 11)
+scene_11.scene_body(" this is flavor text for scene 11: Warm Welcome")
+
+# Scene 12 The Gift
+scene_12= Scene("The Gift", 12)
+scene_12.scene_body(" this is flavor text for scene 12: The Gift")
